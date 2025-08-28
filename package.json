@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "json-server db.json",
-    "dev":"json-server --watch db.json"
+    "start": "node script.js",
+    "dev": "node --watch script.js"
   },
   "engines": {
-    "node": "22" 
+    "node": "22"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/ZahirulIslamTanvir/product-list-with-cart-json-server#readme",
   "dependencies": {
-    "json-server": "^1.0.0-beta.3"
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "json-server": "^1.0.0-beta.3",
+    "morgan": "^1.10.1"
   }
 }
